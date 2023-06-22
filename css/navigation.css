@@ -4,7 +4,7 @@
 
 .navigation__container {
     padding: 0;
-    min-height: 100vw;
+    min-width: 100vw;
 }
 
 .navigation__list {
@@ -27,8 +27,26 @@
     background-position: 8px center;
 }
 
+.navigation__button:hover,
+.navigation__button:focus-visible {
+    outline: 1px solid #f86310;
+    outline-offset: -1px;
+}
+
+@supports not selector(:focus-visible) {
+    .navigation__button:focus {
+        outline: 1px solid #f86310;
+        outline-offset: -1px;
+    }
+}
+
 .navigation__button_active {
+    pointer-events: none;
     background-color: #ffab08;
+}
+
+.navigation__button_active:focus {
+    outline: none;
 }
 
 .navigation__button_burger {
@@ -65,4 +83,25 @@
 
 .navigation__button_sauce {
     background-image: url(../icons/Соусы.png);
+}
+
+@media (min-width: 768px) {
+    .navigation__list {
+        column-gap: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navigation {
+        margin-bottom: 50px;
+    }
+    .navigation__list {
+        column-gap: 24px;
+    }
+    .navigation__button {
+        padding: 9px 14px 9px 46px;
+        font-size: 16px;
+        line-height: 22px;
+        background-position: 14px center;
+    }
 }
