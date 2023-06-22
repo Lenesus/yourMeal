@@ -1,0 +1,68 @@
+.navigation {
+    margin-bottom: 30px;
+}
+
+.navigation__container {
+    padding: 0;
+    min-height: 100vw;
+}
+
+.navigation__list {
+    display: flex;
+    padding: 0 calc((100vw / 2) - (var(--container) / 2));
+    overflow-x: auto;
+    overflow-y: hidden;
+    column-gap: 8px;
+}
+
+.navigation__button {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px 8px 7px 40px;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 8px center;
+}
+
+.navigation__button_active {
+    background-color: #ffab08;
+}
+
+.navigation__button_burger {
+    background-image: url(../icons/Бургеры.png);
+}
+
+.navigation__button_snack {
+    background-image: url(../icons/Закуски.png);
+}
+
+.navigation__button_hot-dog {
+    background-image: url(../icons/Хот-доги.png);
+}
+
+.navigation__button_combo {
+    background-image: url(../icons/Комбо.png);
+}
+
+.navigation__button_roll {
+    background-image: url(../icons/Шаурма.png);
+}
+
+.navigation__button_pizza {
+    background-image: url(../icons/Пицца.png);
+}
+
+.navigation__button_wok {
+    background-image: url(../icons/Вок.png);
+}
+
+.navigation__button_dessert {
+    background-image: url(../icons/Десерты.png);
+}
+
+.navigation__button_sauce {
+    background-image: url(../icons/Соусы.png);
+}
