@@ -1,0 +1,39 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal_open {
+    display: flex;
+}
+
+.modal__main {
+    position: relative;
+    cursor: default;
+    margin: auto;
+}
+
+.modal__close {
+    color: #b1b1b1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+}
+
+.modal__close:focus-visible {
+    color: #ff7020;
+    outline-color: #ff7020;
+    border-radius: 3px;
+}
+
+@media (min-width: 480px) {
+    .modal {
+        padding: 10px;
+    }
+}

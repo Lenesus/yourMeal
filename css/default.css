@@ -2,6 +2,8 @@ html {
     --container: 300px;
     --padding-container: 10px;
     box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
 }
 
 *,
@@ -15,6 +17,8 @@ body {
     min-width: 320px;
     min-height: 100vh;
     background-color: #f9f9f9;
+    position: relative;
+    overflow-x: hidden;
 }
 
 img,

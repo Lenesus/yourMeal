@@ -1,0 +1,113 @@
+.footer {
+    padding: 24px 0;
+    background: #fff;
+}
+
+.footer__logo {
+    width: 196px;
+    color: #ff7020;
+    margin-bottom: 24px;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 34px;
+    font-style: normal;
+}
+
+.footer__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+
+.footer__link-phone {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+.footer__list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__link-sn {
+    color: #ff7020;
+}
+
+.footer__development {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (min-width: 480px) {
+    .footer__logo {
+        margin-bottom: 36px;
+    }
+    .footer__address {
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+    .footer__contact {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__content {
+        display: grid;
+        grid-template-areas: 'logo address' 'development .';
+        gap: 35px;
+    }
+    .footer__logo {
+        width: 300px;
+        margin-bottom: 0;
+        grid-area: logo;
+    }
+    .footer__address {
+        margin-bottom: 0;
+        grid-area: address;
+        gap: 50px;
+        justify-content: flex-end;
+    }
+    .footer__contact {
+        flex-grow: unset;
+    }
+    .footer__development {
+        grid-area: development;
+    }
+    .footer__title {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+    .footer__title_sn {
+        margin-bottom: 22px;
+    }
+    .footer__link-phone {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1360px) {
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 30px;
+    }
+    .footer__address {
+        justify-content: flex-start;
+    }
+    .footer__contact {
+        flex-grow: 1;
+    }
+}
